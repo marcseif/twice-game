@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>TWICE Guessing Game</title>
-  <link rel="stylesheet" href="styles/style.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TWICE Guessing Game</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <h1 class="title">Guess the TWICE Member</h1>
 
-  <h1>TWICE CONCERT QUIZ</h1>
-  <p id="round-info">Round 1 of 10</p>
-  <img id="member-img" src="" alt="TWICE member" />
-  <input type="text" id="guess-input" placeholder="Enter member name..." />
-  <div>
-    <button onclick="checkGuess()">Submit</button>
-  </div>
-  <div id="feedback"></div>
-  <div id="final-score" style="display:none; margin-top:30px; font-weight:bold;"></div>
+    <div id="game-area">
+      <img id="concert" src="images/twicelogo.png" alt="TWICE Concert" />
+      <img id="person" src="images/tharj.png" alt="Person" />
+    </div>
 
-  <script src="scripts/script.js"></script>
-</body>
+    <img id="member-img" src="" alt="TWICE member" />
+
+    <input type="text" id="guess-input" placeholder="Enter member name..." />
+    <div>
+      <button onclick="checkGuess()">Submit</button>
+    </div>
+
+    <div id="feedback"></div>
+    <div id="end-message"></div>
+
+    <div id="retry-container">
+      <button onclick="restartGame()">🔁 Retry</button>
+    </div>
+
+    <script src="scripts/script.js"></script>
+  </body>
 </html>
