@@ -2,99 +2,140 @@ const members = [
   {
     name: "Nayeon",
     images: [
-      "https://kpopping.com/documents/9f/0/800/250720-NAYEON-at-THIS-IS-FOR-World-Tour-in-Incheon-D2-documents-1.jpeg",
-      "https://kpopping.com/documents/ba/2/800/NAYEON-x-Finger-Suit-Japan-documents-1.jpeg",
-      "https://kpopping.com/documents/a2/1/800/250208-NAYEON-Instagram-Update-documents-1.jpeg?v=c7f9c",
-      "https://kpopping.com/documents/9b/1/800/241214-NAMING-Japan-X-Update-with-NAYEON-documents-1.jpeg?v=95233",
-      "https://kpopping.com/documents/b9/1/800/230922-JYP-Fans-Update-Happy-Birthday-Nayeon-documents-1.jpeg?v=d965b",
+      "images/nayeon1.jpeg",
+      "images/nayeon2.jpeg",
+      "images/nayeon3.jpeg",
+      "images/nayeon4.jpeg",
+      "images/nayeon5.jpeg",
     ],
   },
   {
     name: "Jeongyeon",
     images: [
-      "https://kpopping.com/documents/4a/4/800/241203-JEONGYEON-Instagram-Update-documents-1.jpeg?v=4bdd4",
-      "https://kpopping.com/documents/f5/3/800/240303-TWICE-Jeongyeon-Blue-Dream-Media-Fansign-documents-1.jpeg?v=5092c",
-      "https://kpopping.com/documents/fd/0/800/TWICE-Jeongyeon-2nd-Full-Album-Eyes-wide-open-Promotion-Photoshoot-by-Naver-x-Dispatch-documents-1.jpeg?v=1fb1e",
-      "https://kpopping.com/documents/57/1/800/250701-JEONGYEON-Instagram-Update-documents-1.jpeg",
-      "https://kpopping.com/documents/5c/5/800/wherever_yuare-1179644628548456448-EF7weUnU0AE1nte.webp?v=35dd0",
+      "images/jeongyeon1.jpeg",
+      "images/jeongyeon2.jpeg",
+      "images/jeongyeon3.jpeg",
+      "images/jeongyeon4.jpeg",
+      "images/jeongyeon5.jpeg",
     ],
   },
   {
     name: "Momo",
     images: [
-      "https://kpopping.com/documents/63/1/800/250803-MOMO-AT-LOLLAPALOOZA-2025-documents-1.jpeg",
-      "https://kpopping.com/documents/47/1/800/250616-MOMO-Instagram-Update-documents-1.jpeg",
-      "https://kpopping.com/documents/09/5/800/240919-MOMO-Instagram-Update-documents-6.jpeg?v=c7f9c",
-      "https://kpopping.com/documents/a9/1/800/240616-MOMO-Instagram-Update-documents-1.jpeg?v=c7f9c",
-      "https://kpopping.com/documents/3f/1/800/240308-MOMO-Instagram-Update-documents-1.jpeg?v=c7f9c",
+      "images/momo1.jpeg",
+      "images/momo2.jpeg",
+      "images/momo3.jpeg",
+      "images/momo4.jpeg",
+      "images/momo5.jpeg",
     ],
   },
   {
     name: "Sana",
     images: [
-      "https://kpopping.com/documents/f0/4/800/250713-SANA-AT-SBS-documents-1.jpeg",
-      "https://kpopping.com/documents/2b/4/800/221119-TWICE-Sana-Instagram-Update-documents-1.jpeg?v=c7f9c",
-      "https://kpopping.com/documents/c0/3/800/240719-SANA-Instagram-Update-documents-1.jpeg?v=c7f9c",
-      "https://kpopping.com/documents/83/0/800/TWICE-SANA-FOR-ELLE-KOREA-SCANS-documents-1.jpeg?v=82268",
-      "https://kpopping.com/documents/aa/3/800/230319-TWICE-Sana-Mini-Fanmeet-documents-2.jpeg?v=866ea",
+      "images/sana1.jpeg",
+      "images/sana2.jpeg",
+      "images/sana3.jpeg",
+      "images/sana4.jpeg",
+      "images/sana5.jpeg",
     ],
   },
   {
     name: "Jihyo",
     images: [
-      "https://kpopping.com/documents/ad/1/800/241213-JIHYO-Instagram-Update-documents-1.jpeg?v=8771d",
-      "https://kpopping.com/documents/03/5/800/240727-TWICE-Jihyo-5th-World-Tour-Ready-To-Be-in-Yokohama-Day-1-documents-1.jpeg?v=c6b97",
-      "https://kpopping.com/documents/c0/1/800/230819-JIHYO-Instagram-Update-documents-1.jpeg?v=c7f9c",
-      "https://kpopping.com/documents/a3/4/800/TWICE-Jihyo-x-Milk-Touch-2024-Dreaming-Shell-Jewelry-documents-1(1).jpeg?v=9c744",
-      "https://kpopping.com/documents/00/1/800/250711-JIHYO-Instagram-Update-documents-1.jpeg",
+      "images/jihyo1.jpeg",
+      "images/jihyo2.jpeg",
+      "images/jihyo3.jpeg",
+      "images/jihyo4.jpeg",
+      "images/jihyo5.jpeg",
     ],
   },
   {
     name: "Mina",
     images: [
-      "https://kpopping.com/documents/ab/1/800/241013-MINA-at-Boucheron-Pop-Up-Store-Event-In-Japan-The-Quatre-Experience-documents-1.jpeg?v=2d4fe",
-      "https://kpopping.com/documents/29/5/800/230324-JYP-Fans-Update-Happy-Mina-Day-documents-1.jpeg?v=2501c",
-      "https://kpopping.com/documents/b6/2/800/220904-TWICE-Mina-documents-1.jpeg?v=59600",
-      "https://kpopping.com/documents/94/1/800/250713-MINA-THIS-IS-FOR-at-Inkigayo-documents-2.jpeg",
-      "https://kpopping.com/documents/ae/4/800/241206-Twice-Mina-Music-Bank-Commute-documents-2.jpeg?v=e41ab",
+      "images/mina1.jpeg",
+      "images/mina2.jpeg",
+      "images/mina3.jpeg",
+      "images/mina4.jpeg",
+      "images/mina5.jpeg",
     ],
   },
   {
     name: "Dahyun",
     images: [
-      "https://kpopping.com/documents/7c/4/800/DAHYUN-x-Michael-Kors-Fall-2024-Campaign-documents-2.jpeg?v=391ea",
-      "https://kpopping.com/documents/79/2/800/240601-DAHYUN-Snacktacular-Fan-Meet-in-Manila-documents-1.jpeg?v=d965b",
-      "https://kpopping.com/documents/de/5/800/250804-DAHYUN-Instagram-Update-documents-1.jpeg",
-      "https://kpopping.com/documents/50/0/800/230319-TWICE-Dahyun-SET-ME-FREE-at-Inkigayo-documents-1.jpeg?v=0e47f",
-      "https://kpopping.com/documents/5e/5/800/250523-DAHYUN-instagram-update-documents-1.jpeg",
+      "images/dahyun1.jpeg",
+      "images/dahyun2.jpeg",
+      "images/dahyun3.jpeg",
+      "images/dahyun4.jpeg",
+      "images/dahyun5.jpeg",
     ],
   },
   {
     name: "Chaeyoung",
     images: [
-      "https://kpopping.com/documents/8d/5/800/TWICE-Chaeyoung-for-CipiCipi-2024-Dewey-Firm-Tint-documents-2.jpeg?v=294df",
-      "https://kpopping.com/documents/7a/0/800/240304-CHAEYOUNG-Instagram-Update-documents-1.jpeg?v=c7f9c",
-      "https://kpopping.com/documents/a2/4/800/231014-TWICE-Chaeyoung-Lotte-Duty-Free-All-Night-Party-documents-2(5).jpeg?v=5bff1",
-      "https://kpopping.com/documents/8f/5/800/250712-CHAEYOUNG-AT-MBC-MINI-FANMEETING-documents-1.jpeg",
-      "https://kpopping.com/documents/32/2/800/240722-CHAEYOUNG-Instagram-Update-documents-4.jpeg?v=290c7",
+      "images/chaeyoung1.jpeg",
+      "images/chaeyoung2.jpeg",
+      "images/chaeyoung3.jpeg",
+      "images/chaeyoung4.jpeg",
+      "images/chaeyoung5.jpeg",
     ],
   },
   {
     name: "Tzuyu",
     images: [
-      "https://kpopping.com/documents/3a/2/800/240912-TWICE-Tzuyu-Run-Away-at-M-COUNTDOWN-documents-1.jpeg?v=22225",
-      "https://kpopping.com/documents/63/4/800/TWICE-Tzuyu-for-Visee-Killer-Eye-Trio-2024-documents-1.jpeg?v=ca485",
-      "https://kpopping.com/documents/8c/1/800/240303-TWICE-Tzuyu-One-Spark-and-I-GOT-YOU-at-Inkigayo-documents-8.jpeg?v=0e47f",
-      "https://kpopping.com/documents/27/4/800/TWICE-Tzuyu-for-Visee-Nuance-Dewey-documents-1.jpeg?v=ca485",
-      "https://kpopping.com/documents/33/1/800/221002-TWICE-Tzuyu-Instagram-Update-documents-1.jpeg?v=c7f9c",
+      "images/tzuyu1.jpeg",
+      "images/tzuyu2.jpeg",
+      "images/tzuyu3.jpeg",
+      "images/tzuyu4.jpeg",
+      "images/tzuyu5.jpeg",
     ],
   },
+];
+
+const songs = [
+  { name: "Four", file: "audio/four.mp3" },
+  { name: "This is For", file: "audio/thisisfor.mp3" },
+  { name: "After Moon", file: "audio/aftermoon.mp3" },
+  { name: "Battitude", file: "audio/battitude.mp3" },
+  { name: "BDZ", file: "audio/bdz.mp3" },
+  { name: "Cry For Me", file: "audio/cryforme.mp3" },
+  { name: "Dance The Night Away", file: "audio/dancethenightaway.mp3" },
+  { name: "DAT AHH DAT OOH", file: "audio/datahhdatooh.mp3" },
+  { name: "Do It Again", file: "audio/doitagain.mp3" },
+  { name: "Fancy", file: "audio/fancy.mp3" },
+  { name: "Feel Special", file: "audio/feelspecial.mp3" },
+  { name: "Gone", file: "audio/gone.mp3" },
+  { name: "Hell In Heaven", file: "audio/hellinheaven.mp3" },
+  { name: "I Can't Stop Me", file: "audio/icantstopme.mp3" },
+  { name: "I Got You", file: "audio/igotyou.mp3" },
+  { name: "Make Me Go", file: "audio/makemego.mp3" },
+  { name: "Mars", file: "audio/mars.mp3" },
+  { name: "Moonlight Sunrise", file: "audio/moonlightsunrise.mp3" },
+  { name: "One Spark", file: "audio/onespark.mp3" },
+  { name: "Options", file: "audio/options.mp3" },
+  { name: "Right Hand Girl", file: "audio/righthandgirl.mp3" },
+  { name: "Set Me Free", file: "audio/setmefree.mp3" },
+  { name: "Strategy", file: "audio/strategy.mp3" },
+  { name: "Talk That Talk", file: "audio/talkthattalk.mp3" },
+  { name: "The Feels", file: "audio/thefeels.mp3" },
+  { name: "What Is Love", file: "audio/whatislove.mp3" },
+  { name: "Yes or Yes", file: "audio/yesoryes.mp3" },
+  { name: "You In My Heart", file: "audio/youinmyheart.mp3" },
+  // add more mp3 files...
+];
+
+// Create suggestion list from members and songs
+const suggestionsList = [
+  ...members.map((m) => m.name),
+  ...songs.map((s) => s.name),
 ];
 
 let currentMember = null;
 let usedImages = [];
 let correctCount = 0;
 const maxRounds = 10;
+let roundActive = true; // prevent multiple submissions in one round
+let currentLevel = 1;
+let level2Unlocked = false;
 
 function getRandomUnusedImage() {
   let attempts = 0;
@@ -112,7 +153,36 @@ function getRandomUnusedImage() {
   return null;
 }
 
+function switchLevel(level) {
+  if (level === 2 && !level2Unlocked) return; // prevent locked access
+  currentLevel = level;
+
+  // Highlight active level
+  document.getElementById("level1-btn").classList.remove("active");
+  document.getElementById("level2-btn").classList.remove("active");
+  document.getElementById(`level${level}-btn`).classList.add("active");
+
+  // Show/hide media
+  if (currentLevel === 1) {
+    document.getElementById("member-img").style.display = "block";
+    document.getElementById("song-audio").style.display = "none";
+  } else {
+    document.getElementById("member-img").style.display = "none";
+    document.getElementById("song-audio").style.display = "block";
+  }
+
+  const audioControls = document.getElementById("audio-controls");
+  if (currentLevel === 1) {
+    audioControls.style.display = "none";
+  } else {
+    audioControls.style.display = "flex";
+  }
+
+  restartGame();
+}
+
 function nextImage() {
+  roundActive = true;
   document.getElementById("feedback").textContent = "";
   document.getElementById("guess-input").value = "";
 
@@ -121,52 +191,137 @@ function nextImage() {
     return;
   }
 
-  const data = getRandomUnusedImage();
-  if (!data) {
-    endGame(true);
-    return;
-  }
+  if (currentLevel === 1) {
+    const data = getRandomUnusedImage();
+    if (!data) return endGame(true);
+    currentMember = data.member;
+    document.getElementById("member-img").src = data.image;
+    document.getElementById("member-img").style.display = "block";
+    document.getElementById("song-audio").style.display = "none";
+  } else if (currentLevel === 2) {
+    const song = songs[Math.floor(Math.random() * songs.length)];
+    currentMember = song;
+    const audio = document.getElementById("song-audio");
+    const playBtn = document.getElementById("custom-play-btn");
+    const volumeSlider = document.getElementById("volume-slider");
+    const audioControls = document.getElementById("audio-controls");
 
-  currentMember = data.member;
-  document.getElementById("member-img").src = data.image;
+    // Show custom controls for Level 2
+    audioControls.style.display = "flex";
+
+    audio.src = song.file;
+    playBtn.disabled = true; // re-lock until ready
+
+    // Apply saved volume if available
+    if (typeof window.savedVolume !== "undefined") {
+      audio.volume = window.savedVolume;
+      volumeSlider.value = window.savedVolume;
+    } else {
+      audio.volume = 0.5; // default
+      volumeSlider.value = 0.5;
+    }
+
+    // Volume slider persistence
+    volumeSlider.oninput = () => {
+      audio.volume = volumeSlider.value;
+      window.savedVolume = parseFloat(volumeSlider.value);
+    };
+
+    audio.addEventListener("loadedmetadata", function playSegment() {
+      const duration = audio.duration;
+      if (duration > 5) {
+        const startTime = Math.random() * (duration - 5);
+
+        playBtn.disabled = false;
+        playBtn.onclick = () => {
+          audio.currentTime = startTime;
+          audio.play();
+
+          audio.ontimeupdate = () => {
+            if (audio.currentTime >= startTime + 5) {
+              audio.pause();
+              audio.currentTime = 0; // reset
+              audio.ontimeupdate = null;
+            }
+          };
+        };
+        playBtn.onclick();
+      }
+      audio.removeEventListener("loadedmetadata", playSegment);
+    });
+  }
 }
 
 function checkGuess() {
-  const input = document.getElementById("guess-input");
-  const feedback = document.getElementById("feedback");
-  const guess = input.value.trim().toLowerCase();
+  if (!roundActive) return;
+  const guess = document
+    .getElementById("guess-input")
+    .value.trim()
+    .toLowerCase();
   const correct = currentMember.name.toLowerCase();
 
   if (guess === correct) {
     correctCount++;
-    feedback.textContent = "✅ Correct!";
-    feedback.style.color = "green";
+    document.getElementById("feedback").textContent = "✅ Correct!";
+    document.getElementById("feedback").style.color = "green";
+
+    // Move the person for BOTH levels
     movePerson(correctCount);
+
+    roundActive = false;
     setTimeout(nextImage, 800);
   } else {
-    feedback.textContent = `❌ Wrong! It was ${currentMember.name}.`;
-    feedback.style.color = "red";
+    document.getElementById(
+      "feedback"
+    ).textContent = `❌ Wrong! It was ${currentMember.name}.`;
+    document.getElementById("feedback").style.color = "red";
     endGame(false);
   }
 }
 
 function endGame(won) {
+  document.getElementById("guess-input").disabled = true;
+  document.getElementById("submit-btn").disabled = true;
+  roundActive = false;
+
   const endMsg = document.getElementById("end-message");
   const person = document.getElementById("person");
   const concert = document.getElementById("concert");
-
-  document.getElementById("guess-input").disabled = true;
-  document.querySelector("button").disabled = true;
+  const retryButton = document.querySelector("#retry-container button"); // add this line
 
   if (won && correctCount === maxRounds) {
-    endMsg.innerHTML = `🎉 Congratulations, you <strong>ARE</strong> going to the concert! <br><img src="https://cdn.vectorstock.com/i/1000v/53/95/thumbs-up-smiley-emoticon-vector-1075395.jpg" height="100">`;
-    person.classList.add("celebrating");
-    // Final snap to exact center
-    const concertCenter = concert.offsetLeft + concert.offsetWidth / 2;
-    const personCenter = person.offsetWidth / 2;
-    person.style.left = `${concertCenter - personCenter}px`;
+    if (currentLevel === 1) {
+      // Level 1 win text
+      endMsg.innerHTML = `🎉 Congratulations, you unlocked <strong>Level 2</strong>!`;
+      level2Unlocked = true;
+      const level2Btn = document.getElementById("level2-btn");
+      level2Btn.disabled = false;
+      level2Btn.classList.remove("locked");
+
+      retryButton.textContent = "Go to Level 2";
+      retryButton.classList.add("pulse-btn"); // Add pulse
+      retryButton.onclick = () => {
+        retryButton.classList.remove("pulse-btn"); // Remove pulse once clicked
+        document.getElementById("level2-btn").click();
+      };
+    } else if (currentLevel === 2) {
+      // Level 2 win text
+      endMsg.innerHTML = `🎉 Congratulations, you <strong>ARE</strong> going to the concert! <br><img src="https://cdn.vectorstock.com/i/1000v/53/95/thumbs-up-smiley-emoticon-vector-1075395.jpg" height="100">`;
+      person.classList.add("celebrating");
+      retryButton.textContent = "Retry";
+      retryButton.classList.remove("pulse-btn");
+      retryButton.onclick = restartGame;
+
+      // Final snap to exact center
+      const concertCenter = concert.offsetLeft + concert.offsetWidth / 2;
+      const personCenter = person.offsetWidth / 2;
+      person.style.left = `${concertCenter - personCenter}px`;
+    }
   } else {
     endMsg.innerHTML = `👉 You <strong>are NOT</strong> going to the concert! <br><img src="https://static.vecteezy.com/system/resources/thumbnails/017/260/371/small/hand-pointing-finger-at-you-vector.jpg" height="100">`;
+    retryButton.textContent = "Retry";
+    retryButton.classList.remove("pulse-btn");
+    retryButton.onclick = restartGame;
   }
 
   document.getElementById("retry-container").style.display = "block";
@@ -177,15 +332,11 @@ function movePerson(count) {
   const gameArea = document.getElementById("game-area");
   const concert = document.getElementById("concert");
 
-  const gameWidth = gameArea.offsetWidth;
   const concertX = concert.offsetLeft + concert.offsetWidth / 2;
   const personWidth = person.offsetWidth;
+  const stepSize = (concertX - personWidth / 2) / maxRounds;
 
-  const maxSteps = maxRounds;
-  const stepSize = (concertX - personWidth / 2) / maxSteps;
-
-  const leftPos = stepSize * count;
-  person.style.left = `${leftPos}px`;
+  person.style.left = `${stepSize * count}px`;
 }
 
 document
@@ -196,18 +347,111 @@ document
     }
   });
 
-window.onload = nextImage;
+window.onload = () => {
+  document.getElementById("retry-container").style.display = "none"; // hide retry initially
+  nextImage();
+};
 
 function restartGame() {
   correctCount = 0;
   usedImages = [];
+  roundActive = true;
   document.getElementById("end-message").innerHTML = "";
   document.getElementById("feedback").textContent = "";
   document.getElementById("retry-container").style.display = "none";
+
+  // Reset guess input
   document.getElementById("guess-input").disabled = false;
-  document.querySelector("button").disabled = false;
+  document.getElementById("guess-input").value = "";
+
+  // ✅ Explicitly re-enable submit button
+  document.getElementById("submit-btn").disabled = false;
+
   const person = document.getElementById("person");
   person.style.left = "0px";
   person.classList.remove("celebrating");
+
   nextImage();
 }
+
+const guessInput = document.getElementById("guess-input");
+const suggestionsBox = document.getElementById("suggestions");
+let currentSuggestions = [];
+let selectedIndex = -1;
+
+// Function to update suggestions based on level
+function updateSuggestionList() {
+  if (currentLevel === 1) {
+    return members.map((m) => m.name);
+  } else if (currentLevel === 2) {
+    return songs.map((s) => s.name);
+  }
+  return [];
+}
+
+// Listen for typing
+guessInput.addEventListener("input", function () {
+  const query = this.value.toLowerCase();
+  suggestionsBox.innerHTML = "";
+  selectedIndex = -1;
+  currentSuggestions = updateSuggestionList().filter((item) =>
+    item.toLowerCase().includes(query)
+  );
+
+  if (!query || currentSuggestions.length === 0) {
+    suggestionsBox.style.display = "none";
+    return;
+  }
+
+  currentSuggestions.forEach((item, index) => {
+    const div = document.createElement("div");
+    div.textContent = item;
+    div.onclick = () => selectSuggestion(index);
+    suggestionsBox.appendChild(div);
+  });
+
+  suggestionsBox.style.display = "block";
+});
+
+// Keyboard navigation
+guessInput.addEventListener("keydown", function (e) {
+  const items = suggestionsBox.querySelectorAll("div");
+  if (suggestionsBox.style.display === "none") return;
+
+  if (e.key === "ArrowDown") {
+    e.preventDefault();
+    selectedIndex = (selectedIndex + 1) % items.length;
+    highlightSuggestion(items);
+  } else if (e.key === "ArrowUp") {
+    e.preventDefault();
+    selectedIndex = (selectedIndex - 1 + items.length) % items.length;
+    highlightSuggestion(items);
+  } else if (e.key === "Enter") {
+    // Always hide suggestions on Enter
+    suggestionsBox.style.display = "none";
+
+    if (selectedIndex >= 0 && selectedIndex < currentSuggestions.length) {
+      e.preventDefault();
+      selectSuggestion(selectedIndex);
+    }
+  }
+});
+
+function highlightSuggestion(items) {
+  items.forEach((item, idx) => {
+    item.style.backgroundColor = idx === selectedIndex ? "#ffe0e0" : "";
+  });
+}
+
+function selectSuggestion(index) {
+  guessInput.value = currentSuggestions[index];
+  suggestionsBox.style.display = "none";
+  guessInput.focus();
+}
+
+// Hide suggestions if user clicks outside
+document.addEventListener("click", function (e) {
+  if (!document.getElementById("autocomplete-container").contains(e.target)) {
+    suggestionsBox.style.display = "none";
+  }
+});
