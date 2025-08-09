@@ -7,7 +7,25 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <h1 class="title">Guess the TWICE Member</h1>
+    <h1 class="title">TWICE Guessing Game</h1>
+
+    <div id="level-buttons">
+      <button
+        id="level1-btn"
+        class="gradient-btn active"
+        onclick="switchLevel(1)"
+      >
+        Level 1: Members
+      </button>
+      <button
+        id="level2-btn"
+        class="gradient-btn locked"
+        onclick="switchLevel(2)"
+        disabled
+      >
+        Level 2: Songs
+      </button>
+    </div>
 
     <div id="game-area">
       <img id="concert" src="images/twicelogo.png" alt="TWICE Concert" />
@@ -15,17 +33,54 @@
     </div>
 
     <img id="member-img" src="" alt="TWICE member" />
+    <audio id="song-audio"></audio>
 
-    <input type="text" id="guess-input" placeholder="Enter member name..." />
+    <div id="audio-controls" style="display: none">
+      <button id="custom-play-btn" disabled>▶ Play Snippet</button>
+      <input type="range" id="volume-slider" min="0" max="1" step="0.01" />
+    </div>
+
+    <div
+      id="autocomplete-container"
+      style="position: relative; display: inline-block"
+    >
+      <input
+        type="text"
+        id="guess-input"
+        placeholder="Enter answer..."
+        autocomplete="off"
+      />
+      <div
+        id="suggestions"
+        style="
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          background: white;
+          border: 1px solid #ddd;
+          border-radius: 6px;
+          display: none;
+          max-height: 150px;
+          overflow-y: auto;
+          z-index: 10;
+        "
+      ></div>
+    </div>
+
     <div>
-      <button onclick="checkGuess()">Submit</button>
+      <button id="submit-btn" class="gradient-btn" onclick="checkGuess()">
+        Submit
+      </button>
     </div>
 
     <div id="feedback"></div>
     <div id="end-message"></div>
 
     <div id="retry-container">
-      <button onclick="restartGame()">🔁 Retry</button>
+      <button id="retry-btn" class="gradient-btn" onclick="restartGame()">
+        Retry
+      </button>
     </div>
 
     <script src="scripts/script.js"></script>
