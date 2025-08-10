@@ -123,6 +123,38 @@ const songs = [
   // add more mp3 files...
 ];
 
+const dailySongs = [
+  { name: "Four", file: "audio/four.mp3" },
+  { name: "This is For", file: "audio/thisisfor.mp3" },
+  { name: "After Moon", file: "audio/aftermoon.mp3" },
+  { name: "Battitude", file: "audio/battitude.mp3" },
+  { name: "BDZ", file: "audio/bdz.mp3" },
+  { name: "Cry For Me", file: "audio/cryforme.mp3" },
+  { name: "Dance The Night Away", file: "audio/dancethenightaway.mp3" },
+  { name: "DAT AHH DAT OOH", file: "audio/datahhdatooh.mp3" },
+  { name: "Do It Again", file: "audio/doitagain.mp3" },
+  { name: "Fancy", file: "audio/fancy.mp3" },
+  { name: "Feel Special", file: "audio/feelspecial.mp3" },
+  { name: "Gone", file: "audio/gone.mp3" },
+  { name: "Hell In Heaven", file: "audio/hellinheaven.mp3" },
+  { name: "I Can't Stop Me", file: "audio/icantstopme.mp3" },
+  { name: "I Got You", file: "audio/igotyou.mp3" },
+  { name: "Make Me Go", file: "audio/makemego.mp3" },
+  { name: "Mars", file: "audio/mars.mp3" },
+  { name: "Moonlight Sunrise", file: "audio/moonlightsunrise.mp3" },
+  { name: "One Spark", file: "audio/onespark.mp3" },
+  { name: "Options", file: "audio/options.mp3" },
+  { name: "Right Hand Girl", file: "audio/righthandgirl.mp3" },
+  { name: "Set Me Free", file: "audio/setmefree.mp3" },
+  { name: "Strategy", file: "audio/strategy.mp3" },
+  { name: "Talk That Talk", file: "audio/talkthattalk.mp3" },
+  { name: "The Feels", file: "audio/thefeels.mp3" },
+  { name: "What Is Love", file: "audio/whatislove.mp3" },
+  { name: "Yes or Yes", file: "audio/yesoryes.mp3" },
+  { name: "You In My Heart", file: "audio/youinmyheart.mp3" },
+  // add more mp3 files...
+];
+
 // Create suggestion list from members and songs
 const suggestionsList = [
   ...members.map((m) => m.name),
@@ -132,10 +164,12 @@ const suggestionsList = [
 let currentMember = null;
 let usedImages = [];
 let correctCount = 0;
-const maxRounds = 10;
 let roundActive = true; // prevent multiple submissions in one round
 let currentLevel = 1;
 let level2Unlocked = false;
+let dailySong = null;
+let defaultMaxRounds = 10; // keep your original default
+let maxRounds = defaultMaxRounds; // allow reassigning when switching levels
 
 function getRandomUnusedImage() {
   let attempts = 0;
@@ -154,15 +188,20 @@ function getRandomUnusedImage() {
 }
 
 function switchLevel(level) {
-  if (level === 2 && !level2Unlocked) return; // prevent locked access
+  // Level 2 requires unlock
+  if (level === 2 && !level2Unlocked) return;
+
   currentLevel = level;
 
-  // Highlight active level
+  // update active class on all three (if you have level3-btn)
   document.getElementById("level1-btn").classList.remove("active");
   document.getElementById("level2-btn").classList.remove("active");
-  document.getElementById(`level${level}-btn`).classList.add("active");
+  const level3Btn = document.getElementById("level3-btn");
+  if (level3Btn) level3Btn.classList.remove("active");
+  const btn = document.getElementById(`level${level}-btn`);
+  if (btn) btn.classList.add("active");
 
-  // Show/hide media
+  // Show/hide member image vs audio
   if (currentLevel === 1) {
     document.getElementById("member-img").style.display = "block";
     document.getElementById("song-audio").style.display = "none";
@@ -171,11 +210,16 @@ function switchLevel(level) {
     document.getElementById("song-audio").style.display = "block";
   }
 
+  // audio controls visible for level 2 & 3
   const audioControls = document.getElementById("audio-controls");
-  if (currentLevel === 1) {
-    audioControls.style.display = "none";
+  if (currentLevel === 1) audioControls.style.display = "none";
+  else audioControls.style.display = "flex";
+
+  // set rounds for daily
+  if (currentLevel === 3) {
+    maxRounds = 1;
   } else {
-    audioControls.style.display = "flex";
+    maxRounds = defaultMaxRounds;
   }
 
   restartGame();
@@ -186,69 +230,43 @@ function nextImage() {
   document.getElementById("feedback").textContent = "";
   document.getElementById("guess-input").value = "";
 
-  if (correctCount >= maxRounds) {
-    endGame(true);
-    return;
-  }
-
   if (currentLevel === 1) {
+    if (correctCount >= maxRounds) return endGame(true);
     const data = getRandomUnusedImage();
     if (!data) return endGame(true);
     currentMember = data.member;
     document.getElementById("member-img").src = data.image;
     document.getElementById("member-img").style.display = "block";
     document.getElementById("song-audio").style.display = "none";
-  } else if (currentLevel === 2) {
+    return;
+  }
+
+  if (currentLevel === 2) {
+    if (correctCount >= maxRounds) return endGame(true);
     const song = songs[Math.floor(Math.random() * songs.length)];
-    currentMember = song;
-    const audio = document.getElementById("song-audio");
-    const playBtn = document.getElementById("custom-play-btn");
-    const volumeSlider = document.getElementById("volume-slider");
-    const audioControls = document.getElementById("audio-controls");
+    playSongRound(song);
+    return;
+  }
 
-    // Show custom controls for Level 2
-    audioControls.style.display = "flex";
+  if (currentLevel === 3) {
+    // daily
+    const todayKey = new Date().toISOString().split("T")[0];
 
-    audio.src = song.file;
-    playBtn.disabled = true; // re-lock until ready
+    // prepare dailySong (this picks or reuses today's song)
+    getDailySong();
 
-    // Apply saved volume if available
-    if (typeof window.savedVolume !== "undefined") {
-      audio.volume = window.savedVolume;
-      volumeSlider.value = window.savedVolume;
-    } else {
-      audio.volume = 0.5; // default
-      volumeSlider.value = 0.5;
+    // check if user already played today
+    if (localStorage.getItem("dailyPlayedDate") === todayKey) {
+      document.getElementById("feedback").textContent =
+        "🎵 You've already played today's daily song!";
+      document.getElementById("guess-input").disabled = true;
+      document.getElementById("submit-btn").disabled = true;
+      return;
     }
 
-    // Volume slider persistence
-    volumeSlider.oninput = () => {
-      audio.volume = volumeSlider.value;
-      window.savedVolume = parseFloat(volumeSlider.value);
-    };
-
-    audio.addEventListener("loadedmetadata", function playSegment() {
-      const duration = audio.duration;
-      if (duration > 5) {
-        const startTime = Math.random() * (duration - 5);
-
-        playBtn.disabled = false;
-        playBtn.onclick = () => {
-          audio.currentTime = startTime;
-          audio.play();
-
-          audio.ontimeupdate = () => {
-            if (audio.currentTime >= startTime + 5) {
-              audio.pause();
-              audio.currentTime = 0; // reset
-              audio.ontimeupdate = null;
-            }
-          };
-        };
-        playBtn.onclick();
-      }
-      audio.removeEventListener("loadedmetadata", playSegment);
-    });
+    // play the daily song
+    playSongRound(dailySong);
+    return;
   }
 }
 
@@ -264,17 +282,31 @@ function checkGuess() {
     correctCount++;
     document.getElementById("feedback").textContent = "✅ Correct!";
     document.getElementById("feedback").style.color = "green";
-
-    // Move the person for BOTH levels
     movePerson(correctCount);
 
-    roundActive = false;
-    setTimeout(nextImage, 800);
+    if (currentLevel === 3) {
+      // mark daily as played regardless of correct/wrong
+      localStorage.setItem(
+        "dailyPlayedDate",
+        new Date().toISOString().split("T")[0]
+      );
+      endGame(true);
+    } else {
+      roundActive = false;
+      setTimeout(nextImage, 800);
+    }
   } else {
     document.getElementById(
       "feedback"
     ).textContent = `❌ Wrong! It was ${currentMember.name}.`;
     document.getElementById("feedback").style.color = "red";
+
+    if (currentLevel === 3) {
+      localStorage.setItem(
+        "dailyPlayedDate",
+        new Date().toISOString().split("T")[0]
+      );
+    }
     endGame(false);
   }
 }
@@ -379,11 +411,10 @@ const suggestionsBox = document.getElementById("suggestions");
 let currentSuggestions = [];
 let selectedIndex = -1;
 
-// Function to update suggestions based on level
 function updateSuggestionList() {
   if (currentLevel === 1) {
     return members.map((m) => m.name);
-  } else if (currentLevel === 2) {
+  } else if (currentLevel === 2 || currentLevel === 3) {
     return songs.map((s) => s.name);
   }
   return [];
@@ -455,3 +486,97 @@ document.addEventListener("click", function (e) {
     suggestionsBox.style.display = "none";
   }
 });
+
+// pick or reuse today's daily song and return it
+function getDailySong() {
+  const todayKey = new Date().toISOString().split("T")[0]; // YYYY-MM-DD
+  const savedDate = localStorage.getItem("dailySongDate");
+  const savedName = localStorage.getItem("dailySongName");
+
+  if (savedDate === todayKey && savedName) {
+    // if saved for today, reuse
+    dailySong = dailySongs.find((s) => s.name === savedName) || dailySongs[0];
+  } else {
+    // choose a new one for today, persist name + date
+    dailySong = dailySongs[Math.floor(Math.random() * dailySongs.length)];
+    localStorage.setItem("dailySongDate", todayKey);
+    localStorage.setItem("dailySongName", dailySong.name);
+    // remove dailyPlayedDate so everyone can play (if you want)
+    // localStorage.removeItem("dailyPlayedDate");
+  }
+  return dailySong;
+}
+
+// unified audio round logic used by level 2 and level 3
+function playSongRound(song) {
+  if (!song) return console.warn("playSongRound: no song provided");
+
+  currentMember = song;
+  const audio = document.getElementById("song-audio");
+  const playBtn = document.getElementById("custom-play-btn");
+  const volumeSlider = document.getElementById("volume-slider");
+  const audioControls = document.getElementById("audio-controls");
+
+  audioControls.style.display = "flex";
+  document.getElementById("member-img").style.display = "none";
+
+  audio.src = song.file;
+  audio.load();
+  playBtn.disabled = true;
+
+  // Apply saved volume if available
+  if (typeof window.savedVolume !== "undefined") {
+    audio.volume = window.savedVolume;
+    volumeSlider.value = window.savedVolume;
+  } else {
+    audio.volume = 0.5;
+    volumeSlider.value = 0.5;
+  }
+
+  volumeSlider.oninput = () => {
+    audio.volume = volumeSlider.value;
+    window.savedVolume = parseFloat(volumeSlider.value);
+  };
+
+  function playSegment() {
+    const duration = audio.duration || 0;
+    if (duration > 5) {
+      let startTime;
+      if (currentLevel === 3) {
+        // Deterministic start time for daily level
+        const todayKey = new Date().toISOString().split("T")[0];
+        let seed = 0;
+        for (let i = 0; i < todayKey.length; i++) {
+          seed += todayKey.charCodeAt(i);
+        }
+        startTime = seed % Math.floor(duration - 5);
+      } else {
+        // Random for normal song levels
+        startTime = Math.random() * (duration - 5);
+      }
+
+      playBtn.disabled = false;
+      playBtn.onclick = () => {
+        audio.currentTime = startTime;
+        audio.play();
+
+        audio.ontimeupdate = () => {
+          if (audio.currentTime >= startTime + 5) {
+            audio.pause();
+            audio.currentTime = 0;
+            audio.ontimeupdate = null;
+          }
+        };
+      };
+
+      playBtn.onclick();
+    } else {
+      playBtn.disabled = false;
+      playBtn.onclick = () => audio.play();
+    }
+
+    audio.removeEventListener("loadedmetadata", playSegment);
+  }
+
+  audio.addEventListener("loadedmetadata", playSegment);
+}
