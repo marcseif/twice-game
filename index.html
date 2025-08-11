@@ -39,8 +39,17 @@
     <audio id="song-audio"></audio>
 
     <div id="audio-controls" style="display: none">
-      <button id="custom-play-btn" disabled>▶ Play Snippet</button>
-      <input type="range" id="volume-slider" min="0" max="1" step="0.01" />
+      <div class="controls-row">
+        <button id="custom-play-btn" disabled>▶ Play Snippet</button>
+        <input type="range" id="volume-slider" min="0" max="1" step="0.01" />
+      </div>
+      <div id="progress-container">
+        <div id="progress-bar">
+          <div id="segment-indicator"></div>
+          <div id="progress-indicator"></div>
+        </div>
+        <div id="time-counter">0:00 / 0:00</div>
+      </div>
     </div>
 
     <div
@@ -79,6 +88,7 @@
 
     <div id="feedback"></div>
     <div id="end-message"></div>
+    <div id="youtube-container"></div>
 
     <div id="retry-container">
       <button id="retry-btn" class="gradient-btn" onclick="restartGame()">

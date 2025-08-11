@@ -92,67 +92,146 @@ const members = [
 ];
 
 const songs = [
-  { name: "Four", file: "audio/four.mp3" },
-  { name: "This is For", file: "audio/thisisfor.mp3" },
-  { name: "After Moon", file: "audio/aftermoon.mp3" },
-  { name: "Battitude", file: "audio/battitude.mp3" },
-  { name: "BDZ", file: "audio/bdz.mp3" },
-  { name: "Cry For Me", file: "audio/cryforme.mp3" },
-  { name: "Dance The Night Away", file: "audio/dancethenightaway.mp3" },
-  { name: "DAT AHH DAT OOH", file: "audio/datahhdatooh.mp3" },
-  { name: "Do It Again", file: "audio/doitagain.mp3" },
-  { name: "Fancy", file: "audio/fancy.mp3" },
-  { name: "Feel Special", file: "audio/feelspecial.mp3" },
-  { name: "Gone", file: "audio/gone.mp3" },
-  { name: "Hell In Heaven", file: "audio/hellinheaven.mp3" },
-  { name: "I Can't Stop Me", file: "audio/icantstopme.mp3" },
-  { name: "I Got You", file: "audio/igotyou.mp3" },
-  { name: "Make Me Go", file: "audio/makemego.mp3" },
-  { name: "Mars", file: "audio/mars.mp3" },
-  { name: "Moonlight Sunrise", file: "audio/moonlightsunrise.mp3" },
-  { name: "One Spark", file: "audio/onespark.mp3" },
-  { name: "Options", file: "audio/options.mp3" },
-  { name: "Right Hand Girl", file: "audio/righthandgirl.mp3" },
-  { name: "Set Me Free", file: "audio/setmefree.mp3" },
-  { name: "Strategy", file: "audio/strategy.mp3" },
-  { name: "Talk That Talk", file: "audio/talkthattalk.mp3" },
-  { name: "The Feels", file: "audio/thefeels.mp3" },
-  { name: "What Is Love", file: "audio/whatislove.mp3" },
-  { name: "Yes or Yes", file: "audio/yesoryes.mp3" },
-  { name: "You In My Heart", file: "audio/youinmyheart.mp3" },
-  // add more mp3 files...
-];
-
-const dailySongs = [
-  { name: "Four", file: "audio/four.mp3" },
-  { name: "This is For", file: "audio/thisisfor.mp3" },
-  { name: "After Moon", file: "audio/aftermoon.mp3" },
-  { name: "Battitude", file: "audio/battitude.mp3" },
-  { name: "BDZ", file: "audio/bdz.mp3" },
-  { name: "Cry For Me", file: "audio/cryforme.mp3" },
-  { name: "Dance The Night Away", file: "audio/dancethenightaway.mp3" },
-  { name: "DAT AHH DAT OOH", file: "audio/datahhdatooh.mp3" },
-  { name: "Do It Again", file: "audio/doitagain.mp3" },
-  { name: "Fancy", file: "audio/fancy.mp3" },
-  { name: "Feel Special", file: "audio/feelspecial.mp3" },
-  { name: "Gone", file: "audio/gone.mp3" },
-  { name: "Hell In Heaven", file: "audio/hellinheaven.mp3" },
-  { name: "I Can't Stop Me", file: "audio/icantstopme.mp3" },
-  { name: "I Got You", file: "audio/igotyou.mp3" },
-  { name: "Make Me Go", file: "audio/makemego.mp3" },
-  { name: "Mars", file: "audio/mars.mp3" },
-  { name: "Moonlight Sunrise", file: "audio/moonlightsunrise.mp3" },
-  { name: "One Spark", file: "audio/onespark.mp3" },
-  { name: "Options", file: "audio/options.mp3" },
-  { name: "Right Hand Girl", file: "audio/righthandgirl.mp3" },
-  { name: "Set Me Free", file: "audio/setmefree.mp3" },
-  { name: "Strategy", file: "audio/strategy.mp3" },
-  { name: "Talk That Talk", file: "audio/talkthattalk.mp3" },
-  { name: "The Feels", file: "audio/thefeels.mp3" },
-  { name: "What Is Love", file: "audio/whatislove.mp3" },
-  { name: "Yes or Yes", file: "audio/yesoryes.mp3" },
-  { name: "You In My Heart", file: "audio/youinmyheart.mp3" },
-  // add more mp3 files...
+  {
+    name: "Four",
+    file: "audio/four.mp3",
+    youtube: "https://www.youtube.com/watch?v=fhxq4s36-I4",
+  },
+  {
+    name: "This is For",
+    file: "audio/thisisfor.mp3",
+    youtube: "https://www.youtube.com/watch?v=4tGRXSaYsPg",
+  },
+  {
+    name: "After Moon",
+    file: "audio/aftermoon.mp3",
+    youtube: "https://www.youtube.com/watch?v=Cmlhdt2j62s",
+  },
+  {
+    name: "Battitude",
+    file: "audio/battitude.mp3",
+    youtube: "https://www.youtube.com/watch?v=TOic7n-CDd4",
+  },
+  {
+    name: "BDZ",
+    file: "audio/bdz.mp3",
+    youtube: "https://www.youtube.com/watch?v=-tsddqSTkOw",
+  },
+  {
+    name: "Cry For Me",
+    file: "audio/cryforme.mp3",
+    youtube: "https://www.youtube.com/watch?v=FF50-LY2Kro",
+  },
+  {
+    name: "Dance The Night Away",
+    file: "audio/dancethenightaway.mp3",
+    youtube: "https://www.youtube.com/watch?v=fW1Cgv63naI",
+  },
+  {
+    name: "DAT AHH DAT OOH",
+    file: "audio/datahhdatooh.mp3",
+    youtube: "https://www.youtube.com/watch?v=POxNm2NNyps",
+  },
+  {
+    name: "Do It Again",
+    file: "audio/doitagain.mp3",
+    youtube: "https://www.youtube.com/watch?v=kSsAj90BSBk",
+  },
+  {
+    name: "Fancy",
+    file: "audio/fancy.mp3",
+    youtube: "https://www.youtube.com/watch?v=Pa6yt970yZo",
+  },
+  {
+    name: "Feel Special",
+    file: "audio/feelspecial.mp3",
+    youtube: "https://www.youtube.com/watch?v=CZ61FaoaNHg",
+  },
+  {
+    name: "Gone",
+    file: "audio/gone.mp3",
+    youtube: "https://www.youtube.com/watch?v=eGL-O-vZFMA",
+  },
+  {
+    name: "Hell In Heaven",
+    file: "audio/hellinheaven.mp3",
+    youtube: "https://www.youtube.com/watch?v=0O18GnTW1CU",
+  },
+  {
+    name: "I Can't Stop Me",
+    file: "audio/icantstopme.mp3",
+    youtube: "https://www.youtube.com/watch?v=F-5cQSFv9YA",
+  },
+  {
+    name: "I Got You",
+    file: "audio/igotyou.mp3",
+    youtube: "https://www.youtube.com/watch?v=46AmgEfifwk",
+  },
+  {
+    name: "Make Me Go",
+    file: "audio/makemego.mp3",
+    youtube: "https://www.youtube.com/watch?v=3fqDjzbtbG4",
+  },
+  {
+    name: "Mars",
+    file: "audio/mars.mp3",
+    youtube: "https://www.youtube.com/watch?v=N1ExjhcpLso",
+  },
+  {
+    name: "Moonlight Sunrise",
+    file: "audio/moonlightsunrise.mp3",
+    youtube: "https://www.youtube.com/watch?v=rvxx34XJQPM",
+  },
+  {
+    name: "One Spark",
+    file: "audio/onespark.mp3",
+    youtube: "https://www.youtube.com/watch?v=8tiDc7JJ2sE",
+  },
+  {
+    name: "Options",
+    file: "audio/options.mp3",
+    youtube: "https://www.youtube.com/watch?v=0sFFvghflng",
+  },
+  {
+    name: "Right Hand Girl",
+    file: "audio/righthandgirl.mp3",
+    youtube: "https://www.youtube.com/watch?v=dtKQfCr7N7I",
+  },
+  {
+    name: "Set Me Free",
+    file: "audio/setmefree.mp3",
+    youtube: "https://www.youtube.com/watch?v=Z3X3l2O5CmM",
+  },
+  {
+    name: "Strategy",
+    file: "audio/strategy.mp3",
+    youtube: "https://www.youtube.com/watch?v=nmbiBVPe5bY",
+  },
+  {
+    name: "Talk That Talk",
+    file: "audio/talkthattalk.mp3",
+    youtube: "https://www.youtube.com/watch?v=QNWO_ZF7b8w",
+  },
+  {
+    name: "The Feels",
+    file: "audio/thefeels.mp3",
+    youtube: "https://www.youtube.com/watch?v=N388pPWJPxs",
+  },
+  {
+    name: "What Is Love",
+    file: "audio/whatislove.mp3",
+    youtube: "https://www.youtube.com/watch?v=KWZ-ytC9Uyk",
+  },
+  {
+    name: "Yes or Yes",
+    file: "audio/yesoryes.mp3",
+    youtube: "https://www.youtube.com/watch?v=6mTbxCBs0P4",
+  },
+  {
+    name: "You In My Heart",
+    file: "audio/youinmyheart.mp3",
+    youtube: "https://www.youtube.com/watch?v=hoPOCZJv_2M",
+  },
 ];
 
 // Create suggestion list from members and songs
@@ -170,6 +249,11 @@ let level2Unlocked = false;
 let dailySong = null;
 let defaultMaxRounds = 10; // keep your original default
 let maxRounds = defaultMaxRounds; // allow reassigning when switching levels
+let segmentLength = 1; // start at 1s for Level 3
+let dailyAttempts = 0; // number of guesses made today
+let currentStartTime = 0;
+let dailySegmentStartTime = null; // Will store the fixed start time for daily challenge
+let dailyStartTimeSet = false; // Flag to track if we've set the start time
 
 function getRandomUnusedImage() {
   let attempts = 0;
@@ -205,9 +289,15 @@ function switchLevel(level) {
   if (currentLevel === 1) {
     document.getElementById("member-img").style.display = "block";
     document.getElementById("song-audio").style.display = "none";
+    document.getElementById("game-area").style.display = "block";
+  } else if (currentLevel === 2) {
+    document.getElementById("member-img").style.display = "none";
+    document.getElementById("song-audio").style.display = "block";
+    document.getElementById("game-area").style.display = "block";
   } else {
     document.getElementById("member-img").style.display = "none";
     document.getElementById("song-audio").style.display = "block";
+    document.getElementById("game-area").style.display = "none";
   }
 
   // audio controls visible for level 2 & 3
@@ -238,35 +328,37 @@ function nextImage() {
     document.getElementById("member-img").src = data.image;
     document.getElementById("member-img").style.display = "block";
     document.getElementById("song-audio").style.display = "none";
-    return;
-  }
-
-  if (currentLevel === 2) {
+  } else if (currentLevel === 2) {
     if (correctCount >= maxRounds) return endGame(true);
-    const song = songs[Math.floor(Math.random() * songs.length)];
-    playSongRound(song);
-    return;
-  }
 
-  if (currentLevel === 3) {
-    // daily
-    const todayKey = new Date().toISOString().split("T")[0];
+    currentStartTime = 0; // reset start time for new song segment
+    dailyAttempts = 0; // reset attempts just in case
+    segmentLength = 5; // fixed segment length for Level 2
 
-    // prepare dailySong (this picks or reuses today's song)
+    playSongRound(songs[Math.floor(Math.random() * songs.length)], 5);
+  } else if (currentLevel === 3) {
     getDailySong();
 
-    // check if user already played today
-    if (localStorage.getItem("dailyPlayedDate") === todayKey) {
-      document.getElementById("feedback").textContent =
-        "🎵 You've already played today's daily song!";
+    if (dailyAttempts >= 5) {
+      const feedbackEl = document.getElementById("feedback");
+      feedbackEl.textContent = `❌ Sorry, you lost! The song was "${dailySong.name}"`;
+      feedbackEl.style.color = "red";
+      showYoutubeVideo(dailySong.youtube);
       document.getElementById("guess-input").disabled = true;
       document.getElementById("submit-btn").disabled = true;
+      roundActive = false;
       return;
     }
 
-    // play the daily song
-    playSongRound(dailySong);
-    return;
+    segmentLength = dailyAttempts + 1; // 1 to 5 seconds
+
+    // Only set the daily start time once per day
+    if (!dailyStartTimeSet) {
+      dailySegmentStartTime = getDailySegmentStart(dailySong);
+      dailyStartTimeSet = true;
+    }
+
+    playSongRound(dailySong, segmentLength, dailySegmentStartTime);
   }
 }
 
@@ -280,12 +372,17 @@ function checkGuess() {
 
   if (guess === correct) {
     correctCount++;
-    document.getElementById("feedback").textContent = "✅ Correct!";
-    document.getElementById("feedback").style.color = "green";
+    const feedbackEl = document.getElementById("feedback");
+    if (currentLevel === 3) {
+      feedbackEl.textContent = "✅ Correct!";
+      showYoutubeVideo(currentMember.youtube);
+    } else {
+      feedbackEl.textContent = "✅ Correct!";
+    }
+    feedbackEl.style.color = "green";
     movePerson(correctCount);
 
     if (currentLevel === 3) {
-      // mark daily as played regardless of correct/wrong
       localStorage.setItem(
         "dailyPlayedDate",
         new Date().toISOString().split("T")[0]
@@ -296,18 +393,36 @@ function checkGuess() {
       setTimeout(nextImage, 800);
     }
   } else {
-    document.getElementById(
-      "feedback"
-    ).textContent = `❌ Wrong! It was ${currentMember.name}.`;
-    document.getElementById("feedback").style.color = "red";
-
     if (currentLevel === 3) {
-      localStorage.setItem(
-        "dailyPlayedDate",
-        new Date().toISOString().split("T")[0]
-      );
+      dailyAttempts++;
+      if (dailyAttempts < 5) {
+        segmentLength = dailyAttempts + 1; // increase segment length
+
+        // Show generic wrong feedback without revealing answer
+        document.getElementById("feedback").textContent =
+          "❌ Wrong! Try again.";
+        document.getElementById("feedback").style.color = "red";
+
+        // Keep using the same segment with increased length
+        playSongRound(dailySong, segmentLength, dailySegmentStartTime);
+      } else {
+        localStorage.setItem(
+          "dailyPlayedDate",
+          new Date().toISOString().split("T")[0]
+        );
+        const feedbackEl = document.getElementById("feedback");
+        feedbackEl.textContent = `❌ Sorry, you lost! The song was "${dailySong.name}"`;
+        feedbackEl.style.color = "red";
+        showYoutubeVideo(dailySong.youtube);
+        endGame(false);
+      }
+    } else {
+      document.getElementById(
+        "feedback"
+      ).textContent = `❌ Wrong! It was ${currentMember.name}.`;
+      document.getElementById("feedback").style.color = "red";
+      endGame(false);
     }
-    endGame(false);
   }
 }
 
@@ -321,7 +436,13 @@ function endGame(won) {
   const concert = document.getElementById("concert");
   const retryButton = document.querySelector("#retry-container button"); // add this line
 
-  if (won && correctCount === maxRounds) {
+  if (currentLevel === 3) {
+    // For Level 3, we don't show any additional end message
+    // The feedback message and YouTube video are already shown
+    retryButton.textContent = "Try Again";
+    retryButton.classList.remove("pulse-btn");
+    retryButton.onclick = restartGame;
+  } else if (won && correctCount === maxRounds) {
     if (currentLevel === 1) {
       // Level 1 win text
       endMsg.innerHTML = `🎉 Congratulations, you unlocked <strong>Level 2</strong>!`;
@@ -349,7 +470,8 @@ function endGame(won) {
       const personCenter = person.offsetWidth / 2;
       person.style.left = `${concertCenter - personCenter}px`;
     }
-  } else {
+  } else if (currentLevel !== 3) {
+    // Only show "not going to concert" for levels 1 and 2
     endMsg.innerHTML = `👉 You <strong>are NOT</strong> going to the concert! <br><img src="https://static.vecteezy.com/system/resources/thumbnails/017/260/371/small/hand-pointing-finger-at-you-vector.jpg" height="100">`;
     retryButton.textContent = "Retry";
     retryButton.classList.remove("pulse-btn");
@@ -360,6 +482,9 @@ function endGame(won) {
 }
 
 function movePerson(count) {
+  // Don't move person in Level 3
+  if (currentLevel === 3) return;
+
   const person = document.getElementById("person");
   const gameArea = document.getElementById("game-area");
   const concert = document.getElementById("concert");
@@ -388,9 +513,12 @@ function restartGame() {
   correctCount = 0;
   usedImages = [];
   roundActive = true;
+  dailyStartTimeSet = false; // Reset the daily start time flag
   document.getElementById("end-message").innerHTML = "";
   document.getElementById("feedback").textContent = "";
   document.getElementById("retry-container").style.display = "none";
+  document.getElementById("youtube-container").style.display = "none";
+  document.getElementById("youtube-container").innerHTML = "";
 
   // Reset guess input
   document.getElementById("guess-input").disabled = false;
@@ -399,9 +527,12 @@ function restartGame() {
   // ✅ Explicitly re-enable submit button
   document.getElementById("submit-btn").disabled = false;
 
-  const person = document.getElementById("person");
-  person.style.left = "0px";
-  person.classList.remove("celebrating");
+  // Only reset person position if not in Level 3
+  if (currentLevel !== 3) {
+    const person = document.getElementById("person");
+    person.style.left = "0px";
+    person.classList.remove("celebrating");
+  }
 
   nextImage();
 }
@@ -487,28 +618,68 @@ document.addEventListener("click", function (e) {
   }
 });
 
-// pick or reuse today's daily song and return it
 function getDailySong() {
   const todayKey = new Date().toISOString().split("T")[0]; // YYYY-MM-DD
-  const savedDate = localStorage.getItem("dailySongDate");
-  const savedName = localStorage.getItem("dailySongName");
 
-  if (savedDate === todayKey && savedName) {
-    // if saved for today, reuse
-    dailySong = dailySongs.find((s) => s.name === savedName) || dailySongs[0];
-  } else {
-    // choose a new one for today, persist name + date
-    dailySong = dailySongs[Math.floor(Math.random() * dailySongs.length)];
-    localStorage.setItem("dailySongDate", todayKey);
-    localStorage.setItem("dailySongName", dailySong.name);
-    // remove dailyPlayedDate so everyone can play (if you want)
-    // localStorage.removeItem("dailyPlayedDate");
-  }
+  // Use a deterministic hash function on the date string to pick song index
+  const hash = simpleHash(todayKey);
+
+  // Pick a song based on hash modulo length of songs array
+  const index = hash % songs.length;
+
+  dailySong = songs[index];
   return dailySong;
 }
 
-// unified audio round logic used by level 2 and level 3
-function playSongRound(song) {
+// Simple hash function to convert string to integer
+function simpleHash(str) {
+  let hash = 0;
+  for (let i = 0; i < str.length; i++) {
+    hash = (hash << 5) - hash + str.charCodeAt(i);
+    hash |= 0; // Convert to 32bit integer
+  }
+  return Math.abs(hash);
+}
+
+function formatTime(seconds) {
+  const mins = Math.floor(seconds / 60);
+  const secs = Math.floor(seconds % 60);
+  return `${mins}:${secs.toString().padStart(2, "0")}`;
+}
+
+function updateProgressBar(audio, startTime, segLength, totalDuration) {
+  const progressIndicator = document.getElementById("progress-indicator");
+  const segmentIndicator = document.getElementById("segment-indicator");
+  const timeCounter = document.getElementById("time-counter");
+
+  // Calculate segment position and width as percentage of total duration
+  const segmentStart = (startTime / totalDuration) * 100;
+  const segmentWidth = (segLength / totalDuration) * 100;
+
+  // Set segment indicator position and width
+  segmentIndicator.style.left = segmentStart + "%";
+  segmentIndicator.style.width = segmentWidth + "%";
+
+  // Calculate current time within segment
+  const currentTimeInSegment = Math.max(
+    0,
+    Math.min(segLength, audio.currentTime - startTime)
+  );
+
+  // Calculate progress percentage
+  const progress = (currentTimeInSegment / segLength) * 100;
+
+  // Update progress bar
+  progressIndicator.style.left = segmentStart + "%";
+  progressIndicator.style.width = (progress * segmentWidth) / 100 + "%";
+
+  // Update time counter
+  timeCounter.textContent = `${formatTime(currentTimeInSegment)} / ${formatTime(
+    segLength
+  )}`;
+}
+
+function playSongRound(song, fixedSegmentLength = null, fixedStartTime = null) {
   if (!song) return console.warn("playSongRound: no song provided");
 
   currentMember = song;
@@ -524,7 +695,6 @@ function playSongRound(song) {
   audio.load();
   playBtn.disabled = true;
 
-  // Apply saved volume if available
   if (typeof window.savedVolume !== "undefined") {
     audio.volume = window.savedVolume;
     volumeSlider.value = window.savedVolume;
@@ -539,44 +709,73 @@ function playSongRound(song) {
   };
 
   function playSegment() {
-    const duration = audio.duration || 0;
-    if (duration > 5) {
-      let startTime;
-      if (currentLevel === 3) {
-        // Deterministic start time for daily level
-        const todayKey = new Date().toISOString().split("T")[0];
-        let seed = 0;
-        for (let i = 0; i < todayKey.length; i++) {
-          seed += todayKey.charCodeAt(i);
-        }
-        startTime = seed % Math.floor(duration - 5);
-      } else {
-        // Random for normal song levels
-        startTime = Math.random() * (duration - 5);
-      }
+    const duration = audio.duration || 180;
+    const segLength =
+      fixedSegmentLength !== null ? fixedSegmentLength : segmentLength;
+    let startTime;
 
-      playBtn.disabled = false;
-      playBtn.onclick = () => {
-        audio.currentTime = startTime;
-        audio.play();
-
-        audio.ontimeupdate = () => {
-          if (audio.currentTime >= startTime + 5) {
-            audio.pause();
-            audio.currentTime = 0;
-            audio.ontimeupdate = null;
-          }
-        };
-      };
-
-      playBtn.onclick();
+    if (fixedStartTime !== null) {
+      startTime = fixedStartTime;
     } else {
-      playBtn.disabled = false;
-      playBtn.onclick = () => audio.play();
+      // For Level 2 or others, pick random start time as usual
+      startTime = Math.random() * (duration - segLength - 5);
     }
+
+    playBtn.disabled = false;
+    playBtn.onclick = () => {
+      audio.currentTime = startTime;
+      audio.play();
+
+      audio.ontimeupdate = () => {
+        updateProgressBar(audio, startTime, segLength, duration);
+        if (audio.currentTime >= startTime + segLength) {
+          audio.pause();
+          audio.currentTime = 0;
+          audio.ontimeupdate = null;
+        }
+      };
+    };
+
+    playBtn.onclick();
 
     audio.removeEventListener("loadedmetadata", playSegment);
   }
 
   audio.addEventListener("loadedmetadata", playSegment);
+}
+
+function getYoutubeVideoId(url) {
+  const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
+  const match = url.match(regExp);
+  return match && match[2].length === 11 ? match[2] : null;
+}
+
+function showYoutubeVideo(youtubeUrl) {
+  const videoId = getYoutubeVideoId(youtubeUrl);
+  if (!videoId) return;
+
+  const container = document.getElementById("youtube-container");
+  container.innerHTML = `
+    <iframe
+      src="https://www.youtube.com/embed/${videoId}"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  `;
+  container.style.display = "block";
+}
+
+// Deterministic start time based ONLY on date and song (not segmentLength)
+function getDailySegmentStart(song) {
+  const todayKey = new Date().toISOString().split("T")[0]; // YYYY-MM-DD
+  const input = todayKey + song.name; // no segmentLength here
+
+  const hash = simpleHash(input);
+  const maxDuration = 180; // adjust as needed
+  const maxStart = Math.max(0, maxDuration - 5 - 5); // leave 5s buffer plus max segment length (5s)
+
+  const startTime = (hash % (maxStart * 1000)) / 1000; // seconds with ms precision
+  return startTime;
 }

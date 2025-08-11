@@ -120,12 +120,37 @@ button:hover {
   font-size: 1.1em;
 }
 
+#feedback a {
+  color: #ff5fa2;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+#feedback a:hover {
+  color: #ff1493;
+  text-decoration: underline;
+}
+
 #end-message {
   margin-top: 25px;
   font-size: 1.6em;
   font-weight: 600;
   text-align: center;
   color: #333;
+}
+
+#youtube-container {
+  margin: 20px auto;
+  max-width: 560px;
+  width: 100%;
+  display: none;
+}
+
+#youtube-container iframe {
+  aspect-ratio: 16/9;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
 }
 
 #retry-container {
@@ -329,9 +354,53 @@ button:hover {
 
 #audio-controls {
   display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 10px 0;
+  align-items: center;
+}
+
+.controls-row {
+  display: flex;
   align-items: center;
   gap: 10px;
-  margin: 10px 0;
+}
+
+#progress-container {
+  width: 400px;
+  margin: 0;
+}
+
+#time-counter {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+  font-family: "Inter", sans-serif;
+}
+
+#progress-bar {
+  width: 100%;
+  height: 12px;
+  background: #e0e0e0;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+}
+
+#segment-indicator {
+  position: absolute;
+  height: 100%;
+  background: rgba(255, 95, 162, 0.3);
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+#progress-indicator {
+  position: absolute;
+  height: 100%;
+  background: #ff5fa2;
+  width: 0;
+  transition: width 0.1s linear;
 }
 
 /* Shared Gradient Button Style */
